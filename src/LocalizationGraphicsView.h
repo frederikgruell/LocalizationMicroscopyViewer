@@ -1,0 +1,6 @@
+#ifndef __LOCALIZATIONGRAPHICSVIEW_H__
+#define __LOCALIZATIONGRAPHICSVIEW_H__
+
+// place your code here
+
+#endif // __LOCALIZATIONGRAPHICSVIEW_H__

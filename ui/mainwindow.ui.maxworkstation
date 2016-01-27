@@ -1,0 +1,114 @@
+<ui version="4.0" >
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <layout class="QGridLayout" >
+    <property name="margin" >
+     <number>9</number>
+    </property>
+    <property name="spacing" >
+     <number>6</number>
+    </property>
+    <item row="0" column="0" >
+     <widget class="LocMicView" native="1" name="locmicview" />
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile" >
+    <property name="title" >
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionOpen" />
+    <addaction name="separator" />
+    <addaction name="actionClose" />
+   </widget>
+   <widget class="QMenu" name="menuHelp" >
+    <property name="title" >
+     <string>&amp;?</string>
+    </property>
+    <addaction name="actionAbout" />
+   </widget>
+   <widget class="QMenu" name="menuView" >
+    <property name="title" >
+     <string>&amp;View</string>
+    </property>
+    <addaction name="actionZoom_In" />
+    <addaction name="actionZoom_Out" />
+    <addaction name="separator" />
+    <addaction name="actionActual_Size" />
+    <addaction name="actionZoom_to_Fit" />
+   </widget>
+   <addaction name="menuFile" />
+   <addaction name="menuView" />
+   <addaction name="menuHelp" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+  <action name="actionOpen" >
+   <property name="text" >
+    <string>&amp;Open...</string>
+   </property>
+  </action>
+  <action name="actionClose" >
+   <property name="text" >
+    <string>&amp;Close</string>
+   </property>
+  </action>
+  <action name="actionZoom_In" >
+   <property name="text" >
+    <string>Zoom &amp;In</string>
+   </property>
+  </action>
+  <action name="actionZoom_Out" >
+   <property name="text" >
+    <string>Zoom &amp;Out</string>
+   </property>
+  </action>
+  <action name="actionActual_Size" >
+   <property name="text" >
+    <string>&amp;Actual Size</string>
+   </property>
+  </action>
+  <action name="actionZoom_to_Fit" >
+   <property name="checkable" >
+    <bool>true</bool>
+   </property>
+   <property name="text" >
+    <string>&amp;Zoom to Fit</string>
+   </property>
+  </action>
+  <action name="actionAbout" >
+   <property name="text" >
+    <string>&amp;About</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>LocMicView</class>
+   <extends>QWidget</extends>
+   <header>src/locmicview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
